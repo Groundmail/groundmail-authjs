@@ -1,0 +1,58 @@
+{
+  "name": "groundmail-authjs",
+  "version": "0.14.9",
+  "description": "Groundmail email provider for Auth.js / NextAuth (magic-link sign-in)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Groundmail/groundmail-authjs.git"
+  },
+  "homepage": "https://docs.groundmail.dev/guides/authjs",
+  "bugs": {
+    "url": "https://github.com/Groundmail/groundmail-authjs/issues"
+  },
+  "keywords": [
+    "auth.js",
+    "authjs",
+    "next-auth",
+    "nextauth",
+    "email",
+    "magic-link",
+    "transactional",
+    "groundmail",
+    "authentication"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "groundmail": ">=0.13.0"
+  },
+  "devDependencies": {
+    "groundmail": "0.14.8",
+    "tsup": "^8.5.0",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  }
+}
