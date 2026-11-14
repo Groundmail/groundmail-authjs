@@ -1,6 +1,6 @@
 # groundmail-authjs
 
-**Auth.js / NextAuth magic-link email** via [Groundmail](https://groundmail.dev).
+**Auth.js / NextAuth magic-link email** via [Groundmail](https://groundmail.dev?utm_source=github&utm_medium=readme&utm_campaign=groundmail-authjs).
 
 Drop-in email provider — same shape as other Auth.js email providers. Requires a [database adapter](https://authjs.dev/getting-started/database) (Auth.js stores verification tokens).
 
@@ -37,7 +37,7 @@ Also available as `import Groundmail from 'groundmail/authjs'`.
 
 ## Docs
 
-https://docs.groundmail.dev/guides/authjs
+https://docs.groundmail.dev/guides/authjs?utm_source=github&utm_medium=readme&utm_campaign=groundmail-authjs
 
 ## License
 
